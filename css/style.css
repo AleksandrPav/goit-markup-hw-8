@@ -16,34 +16,37 @@
 /*Акцент #2196F3*/
 /*Цвет фона вторичный  #2F303A*/
 /*Цвет фона команды #F5F4FA*/
-.page {
+body {
   background-color: var(--white-color--);
+  font-family: "Raleway", "Roboto";
 }
-ul {
-  list-style: none;
-}
-a {
+.link {
   text-decoration: none;
 }
-.page-logo {
+.list {
+  list-style: none;
+}
+.header-logo {
   color: var(--black-color--);
 }
-.page-logo span {
+.header-logo span {
   color: var(--accent--);
 }
 /*page nav*/
-.page-nav .link {
+.header-item .header-link {
   color: var(--text-color--);
+  list-style: none;
 }
-.page-nav .link:hover,
-.page-nav .link:focus {
+.header-item .header-link:hover,
+.header-item .header-link:focus {
   color: var(--accent--);
 }
-.auth-nav .contacts {
+.contacts-link .contacts {
   color: var(--second-text-color-);
+  list-style: none;
 }
-.auth-nav .contacts:hover,
-.auth-nav .contacts:focus {
+.contacts-link .contacts:hover,
+.contacts-link .contacts:focus {
   color: var(--accent--);
 }
 
@@ -66,6 +69,7 @@ a {
   color: var(--second-text-color-);
 }
 /*our team section*/
+
 .our-team {
   background-color: var(--font-color-team--);
 }
@@ -82,12 +86,12 @@ a {
   color: var(--second-text-color--);
 }
 /*page footer*/
-.page-footer {
+.footer {
   background-color: var(--font-color-second--);
 }
-.page-footer-adress {
+.footer-adress {
   color: var(--white-color--);
 }
-.page-footer-contacts {
+.footer-contacts {
   color: var(--second-white-color--);
 }
