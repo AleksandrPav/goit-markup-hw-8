@@ -1,24 +1,26 @@
 :root {
-  --text-color--: #212121;
-  --second-text-color--: #757575;
-  --white-color--: #ffffff;
-  --second-white-color--: rgba(255, 255, 255, 0.6);
-  --black-color--: #000000;
-  --accent--: #2196f3;
-  --font-color-second--: #2f303a;
-  --font-color-team--: #f5f4fa;
+  --black-header-text--: #212121;
+  --white--: #ffffff;
+  --black--: #000000;
+  --blue--: #2196f3;
+  --gray--: #757575;
+  --gray-rgba--: rgba(255, 255, 255, 0.6);
+  --black-font--: #2f303a;
+  --gray-font--: #f5f4fa;
 }
-/*Цвет основного текста #212121*/
-/*Вторичный цвет текста #757575*/
-/*Белый цвет #FFFFFF*/
-/*Белый вторичный rgba(255, 255, 255, 0.6*)/
+
+/*Черный текст заголовка #212121*/
 /*Черный цвет #000000*/
-/*Акцент #2196F3*/
-/*Цвет фона вторичный  #2F303A*/
-/*Цвет фона команды #F5F4FA*/
+/*Белый цвет #FFFFFF*/
+/*Синий цвет  #2196F3*/
+/*Серый текст #757575*/
+/*Серый цвет адрес футер rgba(255, 255, 255, 0.6)*/
+/*Темный цвет фона #2F303A*/
+/*Серый цвет фона #F5F4FA*/
+
 body {
-  background-color: var(--white-color--);
   font-family: "Raleway", "Roboto";
+  color: var(--White--);
 }
 .link {
   text-decoration: none;
@@ -27,71 +29,97 @@ body {
   list-style: none;
 }
 .header-logo {
-  color: var(--black-color--);
+  color: var(--black--);
 }
+/*nav*/
 .header-logo span {
-  color: var(--accent--);
+  color: var(--blue--);
 }
-/*page nav*/
-.header-item .header-link {
-  color: var(--text-color--);
-  list-style: none;
+.header-link {
+  color: var(--black-header-text--);
 }
-.header-item .header-link:hover,
-.header-item .header-link:focus {
-  color: var(--accent--);
+.header-link:hover,
+:focus {
+  color: var(--blue--);
 }
-.contacts-link .contacts {
-  color: var(--second-text-color-);
-  list-style: none;
+.header-link.current {
+  color: var(--blue--);
 }
-.contacts-link .contacts:hover,
-.contacts-link .contacts:focus {
-  color: var(--accent--);
+.contacts {
+  color: var(--gray--);
 }
-
+.contacts:hover,
+:focus {
+  color: var(--blue--);
+}
 /*effective solutions section*/
-.solutions {
-  background-color: var(--font-color-second--);
+.hero {
+  background-color: var(--black-font--);
 }
-.solutions-title {
-  color: var(--white-color--);
+.hero-title {
+  color: var(--white--);
 }
-.solutions-button {
-  color: var(--white-color--);
-  background-color: var(--accent--);
+.hero-button {
+  background-color: var(--blue--);
+  color: var(--white--);
 }
 /*advantage section*/
 .advantage-title {
-  color: var(--text-color--);
+  color: var(--black-header-text--);
 }
 .advantage-text {
-  color: var(--second-text-color-);
+  color: var(--gray--);
+}
+/*what we do section*/
+.section-title {
+  color: var(--black-header-text--);
 }
 /*our team section*/
-
 .our-team {
-  background-color: var(--font-color-team--);
-}
-.our-team-title {
-  color: var(--text-color--);
+  background-color: var(--gray-font--);
 }
 .our-team-description {
-  background-color: var(--white-color--);
+  background-color: var(--white--);
 }
 .our-team-description-title {
-  color: var(--text-color--);
+  color: var(--black-header-text--);
 }
 .our-team-description-text {
-  color: var(--second-text-color--);
+  color: var(--gray--);
 }
 /*page footer*/
 .footer {
-  background-color: var(--font-color-second--);
+  background-color: var(--black-font--);
+}
+.footer-logo {
+  color: var(--white--);
+}
+.footer-logo span {
+  color: var(--blue--);
 }
 .footer-adress {
-  color: var(--white-color--);
+  color: var(--white--);
 }
 .footer-contacts {
-  color: var(--second-white-color--);
+  color: var(--gray-rgba--);
+}
+
+/*Styles for portfolio*/
+.filters {
+  background-color: var(--white--);
+}
+.filters-button {
+  background-color: var(--gray-font--);
+  color: var(--black-header-text--);
+}
+.filters-button:hover,
+:focus {
+  background-color: var(--blue--);
+  color: var(--white--);
+}
+.portfolio-title {
+  color: var(--black-header-text--);
+}
+.portfolio-text {
+  color: var(--gray--);
 }
