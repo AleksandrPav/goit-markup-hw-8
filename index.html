@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,8 @@
 </head>
 <body>
 <!--page header-->
-    <header>
+    <header class="header">
+        <div class="conteiner">
         <!--main navigation-->
         <nav>
             <a class="link header-logo" href="/"><span>Web</span>Studio</a>
@@ -28,16 +32,18 @@
             <li> <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li> <a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <!--main sections-->
     <main>
         <!--effective solutions section-->
         <section class="hero">
-            <h1  class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1  class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <input class="hero-button" type="button" value="Заказать услугу">
         </section>
         <!--advantage section-->
         <section class="advantage">
+            <div class="conteiner">
             <ul class="list">
                 <li>
                     <h3 class="advantage-title">Внимание к деталям</h3>
@@ -56,41 +62,46 @@
                     <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!--what we do section-->
-        <section>
+        <section class="what-we-do">
+            <div class="conteiner">
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
+            <ul class="list img-wwd">
                 <li><img src="images/what-we-do/box1.jpg" width="370" alt="верстаем сайты"></li>
                 <li><img src="images/what-we-do/box2.jpg" width="370" alt="оптимизируем сайты для разных устройств"></li>
                 <li><img src="images/what-we-do/box3.jpg" width="370" alt="занимаемся дизайном сайта, выбираем цветовую палитру"></li>
             </ul>
+            </div>
         </section>
         <!--our team section-->
         <section class="our-team">
+            <div class="conteiner">
             <h2 class="section-title">Наша команда</h2>
             <ul class="list">
                 <li class="our-team-description">
-                    <img src="images/our-team/img1.jpg" width="270" alt="Игорь Демьяненко Product Designer">
+                    <img class="img-team" src="images/our-team/img1.jpg" width="270" alt="Игорь Демьяненко Product Designer">
                     <h3 class="our-team-description-title">Игорь Демьяненко</h3>
                     <p class="our-team-description-text" lang="en">Product Designer</p>
                 </li>
                 <li class="our-team-description">
-                    <img src="images/our-team/img2.jpg" width="270" alt="Ольга Репина Frontend Developer">
+                    <img class="img-team" src="images/our-team/img2.jpg" width="270" alt="Ольга Репина Frontend Developer">
                     <h3 class="our-team-description-title">Ольга Репина</h3>
                     <p class="our-team-description-text" lang="en">Frontend Developer</p>
                 </li>
                 <li class="our-team-description">
-                    <img src="images/our-team/img3.jpg" width="270" alt="Николай Тарасов Marketingr">
+                    <img class="img-team" src="images/our-team/img3.jpg" width="270" alt="Николай Тарасов Marketingr">
                     <h3 class="our-team-description-title">Николай Тарасов</h3>
                     <p class="our-team-description-text" lang="en">Marketingr</p>
                 </li>
                 <li class="our-team-description">
-                    <img src="images/our-team/img4.jpg" width="270" alt="Михаил Ермаков UI Designer">
+                    <img class="img-team" src="images/our-team/img4.jpg" width="270" alt="Михаил Ермаков UI Designer">
                     <h3 class="our-team-description-title">Михаил Ермаков</h3>
                     <p class="our-team-description-text" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 <!--page footer-->
