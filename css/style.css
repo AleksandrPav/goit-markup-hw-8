@@ -22,11 +22,29 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 .conteiner {
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .link {
   text-decoration: none;
@@ -36,8 +54,7 @@ body {
 }
 /*------------------------------HEADER----------------------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 /*------------------------------NAV----------------------------*/
@@ -81,8 +98,7 @@ body {
 /*------------------------------HERO----------------------------*/
 .hero {
   background-color: var(--black-font--);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--white--);
@@ -92,7 +108,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 .hero-button {
   background-color: var(--txt-bgd-blue--);
@@ -101,10 +116,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
   cursor: pointer;
 }
 .hero-button:hover,
@@ -113,8 +125,6 @@ body {
 }
 /*------------------------------ADVANTAGE SECTION----------------------------*/
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .advantage-title {
   font-weight: 700;
@@ -122,7 +132,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 .advantage-text {
   color: var(--text-color-gray--);
@@ -133,7 +142,7 @@ body {
 }
 
 .what-we-do {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .section-title {
   font-weight: 700;
@@ -141,19 +150,15 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 /*------------------------------OUR TEAM SECTION----------------------------*/
 .our-team {
   background-color: var(--gray-font--);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .our-team-description {
   background-color: var(--white--);
 }
 .img-team {
-  margin-bottom: 30px;
 }
 .our-team-description-title {
   font-weight: 500;
@@ -161,7 +166,6 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 .our-team-description-text {
   color: var(--text-color-gray--);
@@ -170,9 +174,8 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
-/*page footer*/
+/*------------------------------PAGE FOOTER----------------------------*/
 .footer {
   background-color: var(--black-font--);
 }
