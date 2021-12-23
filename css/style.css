@@ -58,6 +58,19 @@ section {
 }
 
 /*------------------------------NAV----------------------------*/
+.header-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: baseline;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 .header-logo {
   color: var(--black--);
   font-family: "Raleway", sans-serif;
@@ -68,6 +81,13 @@ section {
 }
 .header-logo span {
   color: var(--txt-bgd-blue--);
+}
+.header-item-link {
+  margin-left: 93px;
+  width: 294px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header-link {
   color: inherit;
@@ -95,10 +115,20 @@ section {
 .contacts:focus {
   color: var(--txt-bgd-blue--);
 }
+.contacts-link {
+  margin-left: 331px;
+  width: 304px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /*------------------------------HERO----------------------------*/
 .hero {
   background-color: var(--black-font--);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--white--);
@@ -108,6 +138,7 @@ section {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 auto 30px;
 }
 .hero-button {
   background-color: var(--txt-bgd-blue--);
@@ -118,13 +149,29 @@ section {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  border: none;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
 }
 /*------------------------------ADVANTAGE SECTION----------------------------*/
-.advantage {
+.advantage-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.advantage-item:first-child {
+  margin-left: 0;
+}
+.advantage-item:last-child {
+  margin-right: 0;
 }
 .advantage-title {
   font-weight: 700;
@@ -132,6 +179,7 @@ section {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantage-text {
   color: var(--text-color-gray--);
@@ -139,10 +187,18 @@ section {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-basis: auto;
+  max-width: 270px;
 }
-
+/*------------------------------WHAT WE DO SECTION----------------------------*/
 .what-we-do {
   padding-top: 0;
+}
+.img-wwd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .section-title {
   font-weight: 700;
@@ -150,22 +206,41 @@ section {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 /*------------------------------OUR TEAM SECTION----------------------------*/
 .our-team {
   background-color: var(--gray-font--);
 }
+.our-team-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.our-team-item:first-child {
+  margin-left: 0;
+}
+.our-team-item:last-child {
+  margin-right: 0;
+}
+.our-team-item-box {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team-description {
   background-color: var(--white--);
 }
-.img-team {
-}
+
 .our-team-description-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .our-team-description-text {
   color: var(--text-color-gray--);
@@ -174,10 +249,17 @@ section {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
 /*------------------------------PAGE FOOTER----------------------------*/
 .footer {
   background-color: var(--black-font--);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   color: var(--white--);
@@ -186,6 +268,7 @@ section {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .footer-logo span {
   color: var(--txt-bgd-blue--);
@@ -197,6 +280,7 @@ section {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .footer-contacts {
   color: var(--gray-rgba--);
