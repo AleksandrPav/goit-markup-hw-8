@@ -96,6 +96,13 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.item-header-link {
+  margin-right: 40px;
+}
+
+.item-header-link:last-child {
+  margin-right: 0px;
+}
 
 .header-link:hover,
 .header-link:focus {
@@ -104,6 +111,7 @@ section {
 .header-link.current {
   color: var(--txt-bgd-blue--);
 }
+
 .contacts {
   color: var(--text-color-gray--);
   font-weight: 500;
@@ -116,11 +124,14 @@ section {
   color: var(--txt-bgd-blue--);
 }
 .contacts-link {
-  margin-left: 331px;
+  margin-left: auto;
   width: 304px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.item-contacts:last-child {
+  margin-left: auto;
 }
 
 /*------------------------------HERO----------------------------*/
@@ -300,10 +311,17 @@ section {
   color: var(--txt-bgd-blue--);
 }
 
-/*Styles for portfolio*/
+/*------------------------------FILTERS----------------------------*/
 .filters {
   background-color: var(--white--);
 }
+.filters-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .filters-button {
   background-color: var(--gray-font--);
   font-family: inherit;
@@ -314,17 +332,50 @@ section {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 8px 22px;
+  border-style: none;
 }
 .filters-button:hover,
 .filters-button:focus {
   background-color: var(--txt-bgd-blue--);
   color: var(--white--);
 }
+.filters-item-button {
+  margin-right: 8px;
+}
+.filters-item-button:last-child {
+  margin-right: 0px;
+}
+.img-team-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-img {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+  background: var(--white--);
+  border: 1px solid #eeeeee;
+}
+.item-img:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+.item-img:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-img {
+  margin-bottom: 20px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding: 0 24px;
+  margin-bottom: 4px;
 }
 .portfolio-text {
   color: var(--text-color-gray--);
@@ -332,4 +383,5 @@ section {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
+  padding: 0 24px 20px 24px;
 }
