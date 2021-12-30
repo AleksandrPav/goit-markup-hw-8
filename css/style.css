@@ -175,15 +175,17 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+}
+.advantage-item-content {
   margin-left: 30px;
 }
-.advantage-item:first-child {
+.advantage-item-content:first-child {
   margin-left: 0;
 }
-.advantage-item:last-child {
+.advantage-item-content:last-child {
   margin-right: 0;
 }
+
 .advantage-title {
   font-weight: 700;
   font-size: 14px;
@@ -226,15 +228,8 @@ section {
 .our-team-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 30px;
 }
-.our-team-item:first-child {
-  margin-left: 0;
-}
-.our-team-item:last-child {
-  margin-right: 0;
-}
+
 .our-team-item-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -242,17 +237,28 @@ section {
 }
 .our-team-description {
   background-color: var(--white--);
+  margin-left: 30px;
+}
+.our-team-description:first-child {
+  margin-left: 0;
+}
+.our-team-description:last-child {
+  margin-right: 0;
 }
 
+.our-team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .our-team-description-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .our-team-description-text {
   color: var(--text-color-gray--);
   font-weight: 400;
@@ -260,7 +266,6 @@ section {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 .img-team {
   display: block;
@@ -274,6 +279,10 @@ section {
   padding-bottom: 60px;
 }
 .footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.address {
   display: flex;
   flex-direction: column;
 }
@@ -305,10 +314,14 @@ section {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--txt-bgd-blue--);
+}
+.footer-contacts:last-child {
+  margin-bottom: 0;
 }
 
 /*------------------------------FILTERS----------------------------*/
@@ -358,7 +371,6 @@ section {
   margin-bottom: 30px;
   width: 370px;
   background: var(--white--);
-  border-bottom: 1px solid #eeeeee;
 }
 .item-img:nth-child(3n + 3) {
   margin-right: 0px;
@@ -366,15 +378,16 @@ section {
 .item-img:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.portfolio-img {
-  margin-bottom: 20px;
+
+.portfolio-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 0 24px;
   margin-bottom: 4px;
 }
 .portfolio-text {
@@ -383,5 +396,4 @@ section {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
-  padding: 0 24px 20px 24px;
 }
