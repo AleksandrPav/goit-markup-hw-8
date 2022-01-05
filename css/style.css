@@ -125,18 +125,41 @@ section {
 }
 .contacts-link {
   margin-left: auto;
-  width: 304px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .item-contacts:last-child {
   margin-left: auto;
+}
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-phone {
+  margin-right: 10px;
+  margin-left: 30px;
+  fill: currentColor;
+}
+.icon-mail:hover,
+.icon-mail:focus,
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--txt-bgd-blue--);
 }
 
 /*------------------------------HERO----------------------------*/
 .hero {
   background-color: var(--black-font--);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bisness.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -204,6 +227,18 @@ section {
   flex-basis: auto;
   max-width: 270px;
 }
+.svg-advanteg-content {
+  background-color: var(--gray-font--);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.svg-item {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
 /*------------------------------WHAT WE DO SECTION----------------------------*/
 .what-we-do {
   padding-top: 0;
@@ -221,6 +256,7 @@ section {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
 /*------------------------------OUR TEAM SECTION----------------------------*/
 .our-team {
   background-color: var(--gray-font--);
@@ -266,11 +302,42 @@ section {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .img-team {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.our-team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.our-team-social-item + .our-team-social-item {
+  margin-left: 10px;
+}
+.our-team-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--white--);
+}
+.our-team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color-gray--);
+}
+.our-team-social-link:hover,
+.our-team-social-link:focus {
+  background-color: #2196f3;
+}
+.our-team-social-link:hover .our-team-social-icon,
+.our-team-social-link:focus .our-team-social-icon {
+  fill: var(--white--);
 }
 /*------------------------------PAGE FOOTER----------------------------*/
 .footer {
