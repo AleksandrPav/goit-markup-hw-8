@@ -131,7 +131,7 @@ section {
 }
 
 .item-contacts:last-child {
-  margin-left: auto;
+  margin-left: 30px;
 }
 .icon-mail {
   margin-right: 10px;
@@ -139,7 +139,6 @@ section {
 }
 .icon-phone {
   margin-right: 10px;
-  margin-left: 30px;
   fill: currentColor;
 }
 .icon-mail:hover,
@@ -241,6 +240,8 @@ section {
   max-width: 270px;
 }
 .svg-advanteg-content {
+  display: flex;
+  align-items: center;
   background-color: var(--gray-font--);
   width: 270px;
   height: 120px;
@@ -250,7 +251,6 @@ section {
 .svg-item {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 /*------------------------------WHAT WE DO SECTION----------------------------*/
 .what-we-do {
@@ -342,7 +342,7 @@ section {
 .our-team-social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--text-color-gray--);
+  fill: #afb1b8;
 }
 .our-team-social-link:hover,
 .our-team-social-link:focus {
@@ -370,13 +370,14 @@ section {
   margin-left: 30px;
 }
 
-.costumers-list-item {
+.costumers-list-link {
   width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .costumers-item {
   width: 106px;
@@ -386,6 +387,9 @@ section {
 .costumers-list-item:hover,
 .costumers-list-item:focus {
   border: 1px solid #2196f3;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 .costumers-list-item:hover .costumers-item,
 .costumers-list-item:focus .costumers-item {
@@ -401,6 +405,7 @@ section {
 .footer-content {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .footer-item {
@@ -450,7 +455,6 @@ section {
 }
 .footer-social-content {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .footer-social-title {
   font-weight: 700;
