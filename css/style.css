@@ -241,6 +241,7 @@ section {
 }
 .svg-advanteg-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: var(--gray-font--);
   width: 270px;
