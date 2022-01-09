@@ -385,15 +385,13 @@ section {
   height: 60px;
   fill: #afb1b8;
 }
-.costumers-list-item:hover,
-.costumers-list-item:focus {
+.costumers-list-link:hover,
+.costumers-list-link:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
 }
-.costumers-list-item:hover .costumers-item,
-.costumers-list-item:focus .costumers-item {
+.costumers-list-link:hover .costumers-item,
+.costumers-list-link:focus .costumers-item {
   fill: #2196f3;
 }
 
