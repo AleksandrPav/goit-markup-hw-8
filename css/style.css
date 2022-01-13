@@ -97,7 +97,8 @@ section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  padding: 24px 0;
+  transition: color var(--timing-function-duration);
 }
 .item-header-link {
   margin-right: 40px;
@@ -118,7 +119,7 @@ section {
   content: "";
   position: absolute;
   left: 0px;
-  bottom: 4px;
+  bottom: -4px;
   width: 100%;
   height: 4px;
   background-color: var(--txt-bgd-blue--);
@@ -131,6 +132,7 @@ section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--timing-function-duration);
 }
 .contacts:hover,
 .contacts:focus {
@@ -149,10 +151,12 @@ section {
 .icon-mail {
   margin-right: 10px;
   fill: currentColor;
+  transition: fill var(--timing-function-duration);
 }
 .icon-phone {
   margin-right: 10px;
   fill: currentColor;
+  transition: fill var(--timing-function-duration);
 }
 .icon-mail:hover,
 .icon-mail:focus,
@@ -213,6 +217,7 @@ section {
   height: 50px;
   border: none;
   padding: 10px 32px;
+  transition: background-color var(--timing-function-duration);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -352,11 +357,13 @@ section {
   align-items: center;
   border-radius: 50%;
   background-color: var(--white--);
+  transition: background-color var(--timing-function-duration);
 }
 .our-team-social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill var(--timing-function-duration);
 }
 .our-team-social-link:hover,
 .our-team-social-link:focus {
@@ -392,11 +399,14 @@ section {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border var(--timing-function-duration),
+    border-radius var(--timing-function-duration);
 }
 .costumers-item {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition: fill var(--timing-function-duration);
 }
 .costumers-list-link:hover,
 .costumers-list-link:focus {
@@ -457,6 +467,7 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+  transition: color var(--timing-function-duration);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -490,6 +501,7 @@ section {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--timing-function-duration);
 }
 
 .footer-item-svg {
@@ -526,6 +538,9 @@ section {
   border-radius: 4px;
   padding: 8px 22px;
   border-style: none;
+  transition: color var(--timing-function-duration),
+    background-color var(--timing-function-duration),
+    box-shadow var(--timing-function-duration);
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -550,6 +565,7 @@ section {
   margin-bottom: 30px;
   width: 370px;
   background: var(--white--);
+  transition: box-shadow var(--timing-function-duration);
 }
 
 .item-img:nth-child(3n + 3) {
@@ -597,12 +613,11 @@ section {
   height: 168px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity var(--timing-function-duration);
+  transform: translate(-50%, 100%);
+  transition: transform var(--timing-function-duration);
 }
 .portfolio-thumb:hover .portfolio-img-text {
-  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .portfolio-thumb::before {
@@ -616,4 +631,52 @@ section {
 }
 .portfolio-thumb:hover::before {
   transform: translateY(0);
+}
+/*------------------------------MODAL-WINDOW----------------------------*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--timing-function-duration),
+    visibility var(--timing-function-duration);
+}
+.backdrop .is-hidden .modal {
+  transform: scale(0.5);
+}
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: scale var(--timing-function-duration);
+  width: 528px;
+  min-height: 581px;
+  background: var(--white--);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white--);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-icon-close {
+  fill: var(--black--);
 }
