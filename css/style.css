@@ -497,6 +497,7 @@ section {
 }
 .footer-social-content {
   margin-left: 70px;
+  margin-right: 93px;
 }
 .footer-social-title {
   font-weight: 700;
@@ -531,6 +532,61 @@ section {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #2196f3;
+}
+.online-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white--);
+  margin-bottom: 20px;
+}
+.input-email {
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  padding-left: 16px;
+}
+.online-title:focus:hover {
+  color: var(--txt-bgd-blue--);
+}
+.online-form-content {
+  display: flex;
+  align-items: center;
+}
+.button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: var(--txt-bgd-blue--);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white--);
+  transition: background-color var(--timing-function-duration);
+}
+
+.icon-input-send {
+  width: 24px;
+  height: 24px;
 }
 /*------------------------------FILTERS----------------------------*/
 .filters {
