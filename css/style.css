@@ -741,6 +741,9 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
+.modal-top {
+  margin-bottom: 12px;
+}
 .modal-close {
   width: 30px;
   height: 30px;
@@ -763,6 +766,8 @@ section {
 .modal-icon-close {
   fill: var(--black--);
   cursor: pointer;
+  width: 11px;
+  height: 11px;
 }
 .modal-icon-close:hover,
 .modal-icon-close:focus {
@@ -772,11 +777,9 @@ section {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
-  text-align: center;
+
   letter-spacing: 0.03em;
   color: var(--black-header-text--);
-  margin-bottom: 30px;
 }
 .form-input {
   width: 100%;
@@ -826,7 +829,7 @@ section {
   background-color: #188ce8;
 }
 .form-field {
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 .form-field:nth-child(4) {
   margin-bottom: 20px;
@@ -900,4 +903,5 @@ section {
   letter-spacing: 0.03em;
   color: var(--txt-bgd-blue--);
   text-decoration-line: underline;
+  margin-left: 5px;
 }
