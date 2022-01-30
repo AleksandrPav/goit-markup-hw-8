@@ -1,0 +1,109 @@
+/*------------------------------HEADER----------------------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__content {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: baseline;
+}
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.site-nav__logo {
+  color: var(--black--);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.site-nav__logo span {
+  color: var(--txt-bgd-blue--);
+}
+.site-nav__menu {
+  margin-left: 93px;
+  width: 294px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.site-nav__link {
+  position: relative;
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  transition: color var(--timing-function-duration);
+}
+.site-nav__item {
+  margin-right: 40px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0px;
+}
+
+.site-nav__link:hover,
+.header-link:focus {
+  color: var(--txt-bgd-blue--);
+}
+.site-nav__link.current {
+  color: var(--txt-bgd-blue--);
+}
+.site-nav__link.current::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--txt-bgd-blue--);
+  border-radius: 2px;
+}
+
+.contacts__link {
+  color: var(--text-color-gray--);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--timing-function-duration);
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--txt-bgd-blue--);
+}
+.contacts {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__item:last-child {
+  margin-left: 30px;
+}
+.contacts__icon--mail {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--timing-function-duration);
+}
+.contacts__icon--phone {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--timing-function-duration);
+}
+.contacts__icon--mail:hover,
+.contacts__icon--mail:focus,
+.contacts__icon--phone:hover,
+.contacts__icon--phone:focus {
+  fill: var(--txt-bgd-blue--);
+}
