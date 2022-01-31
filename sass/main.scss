@@ -1,7 +1,22 @@
-@import "./utils/vars";
 @import "./base/reset";
 @import "./base/common";
-@import "./utils/hidden";
 
-@import "./header";
-@import "./hero";
+@import "./utils/hidden";
+@import "./utils/variables";
+
+@import "./components/container";
+@import "./components/title";
+@import "./components/modal";
+@import "./components/logo";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantage";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/costumers";
+@import "./layout/footer";
+@import "./layout/subscribe";
+
+@import "./layout/filters";
+@import "./layout/card";
