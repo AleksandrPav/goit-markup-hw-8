@@ -1,9 +1,12 @@
 .team {
   background-color: var(--gray-font--);
 }
-.team__content {
+/* .team__content {
   display: flex;
   flex-direction: row;
+} */
+.team__content {
+  display: block;
 }
 
 .team__box {

@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--black-font--);
@@ -23,9 +23,48 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+} */
+.hero {
+  margin: 0 auto;
+  background-color: var(--black-font--);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/bisness_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 768px) {
+    background-color: var(--black-font--);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/bisness_tub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/bisness.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-.hero__title {
+/* .hero__title {
   color: var(--white--);
   font-weight: 900;
   font-size: 44px;
@@ -34,6 +73,20 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px;
+} */
+.hero__title {
+  color: var(--white--);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__button {
   background-color: var(--txt-bgd-blue--);
@@ -45,7 +98,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
-  min-width: 200px;
+  width: auto;
   height: 50px;
   border: none;
   padding: 10px 32px;
