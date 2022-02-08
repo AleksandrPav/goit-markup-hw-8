@@ -2,8 +2,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin-left: -30px;
     margin-bottom: -30px;
   }
   @media screen and (min-width: 1200px) {
@@ -17,20 +18,23 @@
 }
 
 .advantage__item {
+  max-width: 450px;
+  max-height: 226px;
   margin-bottom: 30px;
 
-  &:last-child {
+  &:nth-child(n + 3) {
     margin-bottom: 0;
   }
   @media screen and(min-width:768px) {
+    max-width: 354px;
+    max-height: 251px;
     width: calc(100% / 2 - 15px);
-    margin-left: 15px;
+    margin-left: 30px;
     margin-bottom: 30px;
-    &:nth-child(n + 3) {
-      margin-bottom: 0px;
-    }
   }
   @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    max-height: 251px;
     margin-left: 30px;
     margin-bottom: 0px;
     &:first-child {

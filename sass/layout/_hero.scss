@@ -25,6 +25,8 @@
   padding-bottom: 200px;
 } */
 .hero {
+  max-width: 480px;
+  max-height: 400px;
   margin: 0 auto;
   background-color: var(--black-font--);
   background-image: linear-gradient(
@@ -39,6 +41,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and (min-width: 768px) {
+    max-width: 768px;
+    max-height: 400px;
     background-color: var(--black-font--);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -51,6 +55,7 @@
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
+    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(

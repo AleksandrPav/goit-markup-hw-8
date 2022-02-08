@@ -11,9 +11,12 @@
   align-items: baseline;
 }
 .site-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .site-nav__menu {
@@ -72,10 +75,13 @@
 }
 
 .contacts {
-  margin-left: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .contacts__item:last-child {
@@ -90,4 +96,7 @@
   &:focus {
     fill: var(--txt-bgd-blue--);
   }
+}
+.menu-open {
+  margin-left: auto;
 }
