@@ -1,11 +1,22 @@
 .filters {
   background-color: var(--white--);
 }
+
 .filters__content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .filters__button {
@@ -33,9 +44,21 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
 .filters__item {
   margin-right: 8px;
+  margin-bottom: 15px;
   &:last-child {
     margin-right: 0px;
+  }
+  &:nth-child(n + 3) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
   }
 }

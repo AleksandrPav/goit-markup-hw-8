@@ -18,13 +18,18 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: scale var(--timing-function-duration);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background: var(--white--);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .modal-top {
   margin-bottom: 12px;
@@ -58,7 +63,7 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-header-text--);
 }
@@ -156,8 +161,8 @@
 }
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.16px;
   letter-spacing: 0.03em;
   color: var(--text-color-gray--);
   display: flex;
@@ -169,7 +174,14 @@
     height: 15px;
     border: 2px solid var(--black-header-text--);
     border-radius: 2px;
+    margin-right: 8px;
+    margin-left: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
     margin-right: 7px;
+    margin-left: 0px;
   }
 }
 
@@ -182,10 +194,14 @@
 }
 .checkbox-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--txt-bgd-blue--);
   text-decoration-line: underline;
   margin-left: 5px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

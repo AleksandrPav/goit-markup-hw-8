@@ -13,3 +13,13 @@
     max-width: 1200px;
   }
 }
+.mob-menu__conteiner {
+  max-width: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 15px;
+}
