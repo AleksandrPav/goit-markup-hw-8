@@ -7,13 +7,23 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/bisness_mobile.jpg);
+    url(../images/Hero_mob_1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-color: var(--black-font--);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero_mob_2x.jpg);
+  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     max-height: 400px;
@@ -22,10 +32,20 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/bisness_tub.jpg);
+      url(../images/Hero_tab_1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-color: var(--black-font--);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Hero_tab_2x.jpg);
+    }
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -36,10 +56,20 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/bisness.jpg);
+      url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-color: var(--black-font--);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Hero_desk_2x.jpg);
+    }
   }
 }
 
