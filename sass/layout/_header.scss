@@ -63,6 +63,12 @@
   &:last-child {
     margin-right: 0px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
 .site-nav__link.current {
