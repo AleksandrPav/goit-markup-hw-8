@@ -1,0 +1,34 @@
+.works {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    display: block;
+  }
+}
+
+.works__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.works__img {
+  position: relative;
+}
+.works__text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white--);
+  top: 224px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+}
