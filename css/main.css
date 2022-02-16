@@ -1016,11 +1016,11 @@ body {
 
 .advantage__item {
   max-width: 450px;
-  max-height: 226px;
-  margin-bottom: -30px;
+  max-height: 100%;
+  margin-bottom: 30px;
 }
 
-.advantage__item:nth-child(n + 3) {
+.advantage__item:nth-child(4) {
   margin-bottom: 0;
 }
 
@@ -1049,6 +1049,9 @@ body {
   }
   .advantage__item:last-child {
     margin-right: 0;
+  }
+  .advantage__item:nth-child(n + 3) {
+    margin-bottom: 0px;
   }
 }
 
