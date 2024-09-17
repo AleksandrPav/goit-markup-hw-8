@@ -1,0 +1,214 @@
+:root {
+  --black-header-text--: #212121;
+  --white--: #ffffff;
+  --black--: #000000;
+  --txt-bgd-blue--: #2196f3;
+  --text-color-gray--: #757575;
+  --gray-rgba--: rgba(255, 255, 255, 0.6);
+  --black-font--: #2f303a;
+  --gray-font--: #f5f4fa;
+}
+
+/*Черный текст заголовка #212121*/
+/*Черный цвет #000000*/
+/*Белый цвет #FFFFFF*/
+/*Синий цвет  #2196F3*/
+/*Серый текст #757575*/
+/*Серый цвет адрес футер rgba(255, 255, 255, 0.6)*/
+/*Темный цвет фона #2F303A*/
+/*Серый цвет фона #F5F4FA*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/*-------nav------------*/
+.header-logo {
+  color: var(--black--);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.header-logo span {
+  color: var(--txt-bgd-blue--);
+}
+.header-link {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--txt-bgd-blue--);
+}
+.header-link.current {
+  color: var(--txt-bgd-blue--);
+}
+.contacts {
+  color: var(--text-color-gray--);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--txt-bgd-blue--);
+}
+/*effective solutions section*/
+.hero {
+  background-color: var(--black-font--);
+}
+.hero-title {
+  color: var(--white--);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--txt-bgd-blue--);
+  font-family: inherit;
+  color: var(--white--);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/*advantage section*/
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage-text {
+  color: var(--text-color-gray--);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*what we do section*/
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*our team section*/
+.our-team {
+  background-color: var(--gray-font--);
+}
+.our-team-description {
+  background-color: var(--white--);
+}
+.our-team-description-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team-description-text {
+  color: var(--text-color-gray--);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*page footer*/
+.footer {
+  background-color: var(--black-font--);
+}
+.footer-logo {
+  color: var(--white--);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-logo span {
+  color: var(--txt-bgd-blue--);
+}
+.footer-adress {
+  color: var(--white--);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts {
+  color: var(--gray-rgba--);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--txt-bgd-blue--);
+}
+
+/*Styles for portfolio*/
+.filters {
+  background-color: var(--white--);
+}
+.filters-button {
+  background-color: var(--gray-font--);
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--txt-bgd-blue--);
+  color: var(--white--);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  color: var(--text-color-gray--);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
